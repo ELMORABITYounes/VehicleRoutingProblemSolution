@@ -20,7 +20,7 @@ import java.util.Map;
 public class JWTAutorizationFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, FilterChain filterChain) throws ServletException, IOException {
-        //httpServletResponse.addHeader("Access-Control-Allow-Origin", "*");
+        httpServletResponse.addHeader("Access-Control-Allow-Origin", "*");
         httpServletResponse.addHeader("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
         httpServletResponse.addHeader("Access-Control-Allow-Headers","Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-method, Access-Control-Request-Headers, Authorization");
         httpServletResponse.addHeader("Access-Control-Expose-Headers","Access-Control-Allow-Origin, Access-Control-Allow-Credentials, Authorization");
