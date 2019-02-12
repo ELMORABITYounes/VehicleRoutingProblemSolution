@@ -1,1 +1,1 @@
-web: java -jar target/ensak-0.0.1-SNAPSHOT.jar
+web: java -jar -Dserver.port=$PORT target/ensak-0.0.1-SNAPSHOT.jar
